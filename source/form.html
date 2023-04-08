@@ -54,6 +54,28 @@
           </picture>
         </div>
       </section>
+      <h1 class="visually-hidden">Отзывы пользователей</h1>
+      <sectoin class="comment-feed">
+        <h2 class="comment-feed__header">КОММЕНТАРИИ</h2>
+        <ol class="comment-feed__list">
+          <li class="comment-feed__user-comment">
+            <div class="comment-feed__user-info">
+              <p class="comment-feed__user-name">Аристотель</p>
+              <p class="comment-feed__user-date">12.04.2023</p>
+            </div>
+            <p class="comment-feed__user-text">Два года человек учится говорить, а потом всю оставшуюся жизнь — молчать.
+            </p>
+          </li>
+          <li class="comment-feed__user-comment">
+            <div class="comment-feed__user-info">
+              <p class="comment-feed__user-name">Эмиль Чоран</p>
+              <p class="comment-feed__user-date">25.04.2023</p>
+            </div>
+            <p class="comment-feed__user-text">Чем больше живу, тем меньше остается возможностей перетаскивать себя изо дня в день. Честно говоря, их никогда не было особенно много, я всегда жил за гранью возможного. Моя память загромождена обломками взорванных горизонтов.
+            </p>
+          </li>
+        </ol>
+      </sectoin>
       <section class="form">
         <div class="form__greetings-wrapper">
           <h2 class="form__greetings-title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
@@ -66,11 +88,11 @@
               <h2 class="form__title">ПРЕДСТАВЬТЕСЬ:</h2>
               <div class="form__frame">
                 <label class="form__label" for="name-input">ИМЯ*:</label>
-                <input class="form__input" id="name-input" name="name-input" type="text" placeholder="Пётр" required>
+                <input class="form__input form__input-name" id="name-input" name="name-input" type="text" placeholder="Пётр" required>
               </div>
               <div class="form__frame">
                 <label class="form__label" for="surname-input">ФАМИЛИЯ*:</label>
-                <input class="form__input" id="surname-input" name="surname-input" type="text" placeholder="Пустота"
+                <input class="form__input form__input-surname" id="surname-input" name="surname-input" type="text" placeholder="Пустота"
                   required>
               </div>
               <div class="form__frame">
@@ -249,6 +271,7 @@
       </div>
     </div>
   </div>
+  <script src="./js/comments.js"></script>
   <script src="./js/menu.js"></script>
 </body>
 

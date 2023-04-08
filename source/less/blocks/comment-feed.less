@@ -1,0 +1,47 @@
+.comment-feed {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-feed__header {
+    text-align: center;
+}
+
+.comment-feed__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @media (min-width: @tablet-width) {
+        margin-top: 55px;
+    }
+    @media (min-width: @desktop-width) {
+        margin-top: 67px;
+    }
+}
+
+.comment-feed__user-comment {
+    margin: 0 10px;
+    padding: 5px;
+    border-bottom: 2px groove #f2f2f2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 23px;
+    color: #333;
+}
+
+.comment-feed__user-name {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+}
+
+.comment-feed__user-date {
+    display: inline;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+}
