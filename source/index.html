@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="main-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__menu site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--main site-list__link--active" href="./index.html">ГЛАВНАЯ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--photo" href="./catalog.html">ФОТО И ВИДЕО
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--form" href="./form.html">ФОРМА ОТЗЫВА
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--academy" href="https://github.com/kradunches">GITHUB
+            </a>
+          </li>
+        </ul>
+        <a class="main-nav__logo" href="#">
+          <img class="main-nav__sedona-logo" src="./img/logo.png" width="185" height="96" srcset="./img/logo@2x.png 2x"
+            alt="Логотип Седона">
+        </a>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Туристический сайт городка Седона</h1>
+
+      <section class="welcome-painting">
+        <div class="welcome-painting__sedona-mountains">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/index/hero-block-text-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/index/hero-block-text-tablet.svg">
+            <img class="welcome-painting__hero-block-text" aria-hidden="true" src="./img/index/hero-block-text.svg"
+              width="282" height="214" alt="Добро пожаловать в Седону.">
+          </picture>
+        </div>
+        <h2 class="welcome-painting__description">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ
+          БОЛЬШЕГО!</h2>
+        <p class="welcome-painting__justification">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
+        </p>
+      </section>
+
+      <section class="characteristics">
+        <ul class="characteristics__advantages-list">
+          <li class="characteristics__advantages-item">
+            <div class="characteristics__advantages-item-bluestyle">
+              <div class="characteristics__advantage-text characteristics__advantage-text--realtown">
+                <h2 class="characteristics__title-bluestyle">НАСТОЯЩИЙ ГОРОДОК</h2>
+                <p class="characteristics__text-bluestyle">— №1 —</p>
+                <p class="characteristics__text-bluestyle">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              </div>
+
+              <div class="itc-slider" data-slider="itc-slider" data-loop="true">
+                <div class="itc-slider__wrapper">
+                  <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                      <picture class="characteristics__img-city">
+                        <source media="(min-width: 1200px)"
+                          srcset="./img/index/photo-city-desktop.jpg 1x, ./img/index/photo-city-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="./img/index/photo-city-tablet.jpg 1x, ./img/index/photo-city-tablet@2x.jpg 2x">
+                        <img class="characteristics__img" src="./img/index/photo-city.jpg" width="800" height="256"
+                          srcset="./img/index/photo-city@2x.jpg 2x" alt="Дома на селе Седона">
+                      </picture>
+                    </div>
+                    <div class="itc-slider__item">
+                      <picture class="characteristics__img-city">
+                        <source media="(min-width: 1200px)"
+                          srcset="./img/index/photo-city2-desktop.jpg 1x, ./img/index/photo-city2-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="./img/index/photo-city2-tablet.jpg 1x, ./img/index/photo-city2-tablet@2x.jpg 2x">
+                        <img class="characteristics__img" src="./img/index/photo-city2.jpg" width="800" height="256"
+                          srcset="./img/index/photo-city2@2x.jpg 2x" alt="Дома на селе Седона">
+                      </picture>
+                    </div>
+                    <div class="itc-slider__item">
+                      <picture class="characteristics__img-city">
+                        <source media="(min-width: 1200px)"
+                          srcset="./img/index/photo-city3-desktop.jpg 1x, ./img/index/photo-city3-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="./img/index/photo-city3-tablet.jpg 1x, ./img/index/photo-city3-tablet@2x.jpg 2x">
+                        <img class="characteristics__img" src="./img/index/photo-city3.jpg" width="800" height="256"
+                          srcset="./img/index/photo-city3@2x.jpg 2x" alt="Дома на селе Седона">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
+              </div>
+
+
+            </div>
+            <div class="characteristics__graphical-advantages">
+
+              <div class="characteristics__blackstyle-wrapper">
+                <img class="characteristics__graphical-element characteristics__graphical-element--house"
+                  src="./img/index/icon-house.svg" width="39" height="37" alt="Иконка Жилье">
+                <p class="characteristics__title-blackstyle">ЖИЛЬЕ</p>
+                <p class="characteristics__text-blackstyle">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+              </div>
+
+              <div class="characteristics__blackstyle-wrapper">
+                <img class="characteristics__graphical-element characteristics__graphical-element--food"
+                  src="./img/index/icon-burger.svg" width="40" height="35" alt="Иконка Еда">
+                <p class="characteristics__title-blackstyle">ЕДА</p>
+                <p class="characteristics__text-blackstyle characteristics__text-blackstyle--food">ВСЕГДА ЗАКАЗЫВАЙТЕ
+                  ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
+                </p>
+              </div>
+
+
+              <div class="characteristics__blackstyle-wrapper">
+                <img class="characteristics__graphical-element characteristics__graphical-element--souvenir"
+                  src="./img/index/icon-gift.svg" width="32" height="38" alt="Иконка Сувениры">
+                <p class="characteristics__title-blackstyle">СУВЕНИРЫ</p>
+                <p class="characteristics__text-blackstyle characteristics__text-blackstyle--souvenir">НЕ ТОЛЬКО
+                  КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+              </div>
+
+            </div>
+          </li>
+          <li class="characteristics__advantages-item characteristics__advantages-item-bluestyle">
+            <div class="characteristics__advantage-text characteristics__advantage-text--devilbridge">
+              <h2 class="characteristics__title-bluestyle">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+              <p class="characteristics__text-bluestyle">— №2 —</p>
+              <p class="characteristics__text-bluestyle characteristics__text-bluestyle--devilbridge">ДА, ПО НЕМУ МОЖНО
+                ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+            </div>
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true">
+              <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                  <div class="itc-slider__item">
+                    <picture class="characteristics__picture-devilbridge">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/index/photo-bridge-desktop.jpg 1x, ./img/index/photo-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/index/photo-bridge-tablet.jpg 1x, ./img/index/photo-bridge-tablet@2x.jpg 2x">
+                      <img class="characteristics__img  characteristics__img-devilbridge"
+                        src="./img/index/photo-bridge.jpg" width="800" height="256"
+                        srcset="./img/index/photo-bridge@2x.jpg 2x" alt="Мост дьявола">
+                    </picture>
+                  </div>
+                  <div class="itc-slider__item">
+                    <picture class="characteristics__picture-devilbridge">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/index/photo-bridge2-desktop.jpg 1x, ./img/index/photo-bridge2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/index/photo-bridge2-tablet.jpg 1x, ./img/index/photo-bridge2-tablet@2x.jpg 2x">
+                      <img class="characteristics__img  characteristics__img-devilbridge"
+                        src="./img/index/photo-bridge2.jpg" width="800" height="256"
+                        srcset="./img/index/photo-bridge2@2x.jpg 2x" alt="Мост дьявола">
+                    </picture>
+                  </div>
+                  <div class="itc-slider__item">
+                    <picture class="characteristics__picture-devilbridge">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/index/photo-bridge3-desktop.jpg 1x, ./img/index/photo-bridge3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/index/photo-bridge3-tablet.jpg 1x, ./img/index/photo-bridge3-tablet@2x.jpg 2x">
+                      <img class="characteristics__img  characteristics__img-devilbridge"
+                        src="./img/index/photo-bridge3.jpg" width="800" height="256"
+                        srcset="./img/index/photo-bridge3@2x.jpg 2x" alt="Мост дьявола">
+                    </picture>
+
+                  </div>
+                </div>
+              </div>
+              <button class="itc-slider__btn itc-slider__btn_prev"></button>
+              <button class="itc-slider__btn itc-slider__btn_next"></button>
+            </div>
+          </li>
+          <li class="characteristics__advantages-item characteristics__advantages-item-grey">
+            <h2 class="characteristics__title-whitestyle">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+            <p class="characteristics__text-whitestyle">— №3 —</p>
+            <p class="characteristics__text-whitestyle">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </li>
+          <li class="characteristics__advantages-item characteristics__advantages-item-grey">
+            <h2 class="characteristics__title-whitestyle characteristics__title-whitestyle--road">КРАСИВАЯ ДОРОГА</h2>
+            <p class="characteristics__text-whitestyle">— №4 —</p>
+            <p class="characteristics__text-whitestyle">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          </li>
+          <li class="characteristics__advantages-item characteristics__advantages-item-grey">
+            <h2 class="characteristics__title-whitestyle characteristics__title-whitestyle--tourists">МАЛО ТУРИСТОВ</h2>
+            <p class="characteristics__text-whitestyle">— №5 —</p>
+            <p class="characteristics__text-whitestyle">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          </li>
+        </ul>
+      </section>
+      <section class="hotel-block">
+        <h2 class="visually-hidden">Записаться на поездку.</h2>
+        <div class="hotel-block__description-wrapper">
+          <p class="hotel-block__title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+          <p class="hotel-block__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ
+            ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+          <button class="hotel-block__button">НАЙТИ ГОСТИНИЦУ</button>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Седона на карте.</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1418245.4256196404!2d-111.82183137156765!3d34.34751782688015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1672778676820!5m2!1sru!2sru"
+          width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="main-footer__wrapper">
+        <a class="main-footer__sedona-link" href="#">
+          <p class="main-footer__sedona-link-hashtag">#VISITSEDONA</p>
+        </a>
+        <div class="main-footer__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social__list">
+            <li class="social__item social__item--vk">
+              <a class="social__link" href="#">
+                <svg class="social__img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="14"
+                  fill="none" viewBox="0 0 24 14">
+                  <path fill="#fff" fill-rule="evenodd"
+                    d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--tg">
+              <a class="social__link" href="#">
+                <svg class="social__img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="22" height="18"
+                  fill="none" viewBox="0 0 22 18">
+                  <path fill="#fff"
+                    d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--yt">
+              <a class="social__link" href="#">
+                <svg class="social__img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="14"
+                  fill="none" viewBox="0 0 20 14">
+                  <path fill="#fff"
+                    d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__logo-wrapper main-footer__logo-wrapper--index">
+          <a class="main-footer__logo-link" href="#">
+            <p class="main-footer__logo-text">РАЗРАБОТАНО</p>
+            <svg class="main-footer__logo-academy" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="27"
+              height="35" fill="none">
+              <path fill="#000"
+                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/menu.js"></script>
+  <script src="./js/itc-slider.js" defer></script>
+</body>
+
+</html>

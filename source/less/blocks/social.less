@@ -1,0 +1,43 @@
+.social {
+  min-width: 166px;
+  width: 100%;
+}
+
+.social__list {
+  padding: 0;
+  margin: 0;
+  margin-left: 6px;
+  display: flex;
+  justify-content: space-between;
+  width: 156px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 113px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 269px;
+  }
+}
+
+.social__item {
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin: 0;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

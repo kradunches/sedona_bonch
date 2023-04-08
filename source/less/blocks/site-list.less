@@ -1,0 +1,137 @@
+@media (min-width: @tablet-width) {
+  .site-list__item:nth-child(2) {
+    margin-right: 100px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 100px;
+  }
+}
+
+.site-list {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 320px;
+  min-height: 223px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    min-height: 50px;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    min-height: 53px;
+  }
+}
+
+.site-list__link {
+  width: 320px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  padding: 15px 21px;
+  text-decoration: none;
+  background-color: #81b3d2;
+  border-top: 1px solid #678fa8;
+  border-bottom: 1px solid #9ac2db;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 12px 0 15px 0;
+
+    &--active {
+      color: #766357;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 6px;
+    width: 200px;
+  }
+}
+
+.site-list__link:last-child {
+  border-bottom: none;
+}
+
+.site-list__item a[href] {
+  @media (max-width: @tablet-width) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: #5496bd;
+      opacity: 0.3;
+    }
+  }
+}
+
+.site-list__link--main {
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 190px;
+    padding-left: 0;
+    padding-right: 18px;
+  }
+}
+
+.site-list__link--photo {
+  @media (min-width: @tablet-width) {
+    padding-left: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 130px;
+    padding-left: 0;
+  }
+}
+
+.site-list__link--form {
+  @media (min-width: @tablet-width) {
+    padding-right: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    padding-left: 93px;
+  }
+}
+
+.site-list__link--academy {
+  @media (min-width: @tablet-width) {
+    padding-right: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    padding-left: 32px;
+  }
+}
