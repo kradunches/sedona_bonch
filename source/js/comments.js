@@ -10,7 +10,7 @@ let modalWrong = document.querySelector('.something-wrong');
 let buttonCloseWrong = document.querySelector('.something-wrong__close-button');
 
 
-regexp = new RegExp("хуй|хуи|пизд|сук|бляд|пидор|пидар|мраз|козел|шлюх|шлюш|проститут|еба|ебо|ёба|ёбо|йоб", "gi");
+regexp = new RegExp("хуй|хуи|хуе|пизд|сук|бляд|пидор|пидар|пидр|мраз|козел|козл|шлюх|шлюш|проститут|еба|ебо|ёба|ёбо|йоб", "gi");
 
 commentForm.onsubmit = function (evt) {
     evt.preventDefault();
@@ -26,7 +26,7 @@ commentForm.onsubmit = function (evt) {
 
     let nowDate = new Date();
 
-    newComment.innerHTML = `<div class=\"comment-feed__user-info\"><p class=\"comment-feed__user-name\">${commentUserName.value} ${commentUserSurname.value}</p><p class=\"comment-feed__user-date\">${nowDate.getDate()}.${nowDate.getMonth()}.${nowDate.getFullYear()}</p></div><p class=\"comment-feed__user-text\">${commentField.value}</p>`;
+    newComment.innerHTML = `<div class=\"comment-feed__user-info\"><p class=\"comment-feed__user-name\">${commentUserName.value} ${commentUserSurname.value}</p><p class=\"comment-feed__user-date\">${nowDate.getDate()}.${nowDate.getMonth() + 1}.${nowDate.getFullYear()}</p></div><p class=\"comment-feed__user-text\">${commentField.value}</p>`;
     
      commentList.append(newComment);
      modalSuccess.classList.remove('visually-hidden');
