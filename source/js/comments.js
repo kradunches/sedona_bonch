@@ -10,7 +10,7 @@ let modalWrong = document.querySelector('.something-wrong');
 let buttonCloseWrong = document.querySelector('.something-wrong__close-button');
 
 
-regexp = new RegExp("хуй|хуи|хуе|пизд|сук|бляд|пидор|пидар|пидр|мраз|козел|козл|шлюх|шлюш|проститут|еба|ебо|ёба|ёбо|йоб", "gi");
+regexp = new RegExp(">|<|script|хуй|хуи|хуе|пизд|сук|бляд|пидор|пидар|пидр|мраз|козел|козл|шлюх|шлюш|проститут|еба|ебо|ёба|ёбо|йоб", "gi");
 
 commentForm.onsubmit = function (evt) {
     evt.preventDefault();
